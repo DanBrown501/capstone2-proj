@@ -27,6 +27,7 @@ const Home = () => {
         <h3>{content}</h3>
       </header>
     </div>
+    
   );
 };
 

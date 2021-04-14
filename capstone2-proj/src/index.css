@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* @font-face { */
+/*   font-family: 'Darker Grotesque'; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+/*   src: local('Darker Grotesque Regular'), local('DarkerGrotesque-Regular'), */
+/*     url(./assets/fonts/DarkerGrotesque-Regular.ttf) format('truetype'); */
+/* } */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Passages  */
+.bible-content {
+  text-align: justify;
+  width: 50%;
+  margin: 6rem auto auto auto;
+}
+
+.p {
+  margin: 0;
+  font-size: 14px;
+}
+
+p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+span[data-number] {
+  font-weight: bold;
+  padding: 0 10px;
+}

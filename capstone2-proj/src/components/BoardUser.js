@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
-
+import { ThemeProvider } from 'theme-ui';
+import { BrowserRouter, Switch } from 'react-router-dom';
+import Box from './Box';
+import Navbar from './Navbar';
+import Router from '../router';
+import routes from '../router/config';
+import theme from '../theme';
 import UserService from "../services/user.service";
 
 const BoardUser = () => {
@@ -25,9 +31,23 @@ const BoardUser = () => {
 
   return (
     <div className="container">
-      <header className="jumbotron">
+      {/* <header className="jumbotron">
         <h3>{content}</h3>
-      </header>
+      </header> */}
+<ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <Box>
+        <>          
+        {/* <Navbar /> */}
+          <Switch>
+            {routes.map(route => (
+              <Router key={route.path} {...route} />
+            ))}
+          </Switch>
+        </>
+      </Box>
+    </BrowserRouter>
+  </ThemeProvider>
     </div>
   );
 };
