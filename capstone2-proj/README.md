@@ -12,7 +12,7 @@ Technology Stack
 * [PostgreSQL] 
 * [Bootstrap]
 * [CSS] 
-* [React] 
+* [Reactjs] 
 * [Redux]
 
 – The *App* component is a container with React Router. It gets app state from Redux Store. Then the *navbar* now can display based on the state.
