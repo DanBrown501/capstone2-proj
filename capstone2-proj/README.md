@@ -63,22 +63,38 @@ Technology Stack
 
 ## Bible API Routes
 
-> /, /home Home
-> /version/:bibleid Books
-> /version/:bibleId/books/:bookId Chapter
-> version/:bibleId/passages/:passagesId Passages
+Home
+- /, /home 
+
+Books
+-  /version/:bibleid 
+
+Chapter
+-  /version/:bibleId/books/:bookId
+
+Passages 
+- version/:bibleId/passages/:passagesId 
 
 ## Login API Routes
 
-> /mod Moderator Board
-> /admin Admin Board
-> /user Bible Versions
-> /login Login, Logout
-> /register Sign Up
-> /profile Profile
-> /user User
-> /mod Moderator
-> /admin Administrator
+Moderator Board
+- /mod 
+
+Admin Board
+- /admin 
+
+Bible Versions
+- /user 
+
+Login, Logout
+- /login 
+
+Sign Up
+- /register
+
+Profile
+- /profile 
+
 
 
 
